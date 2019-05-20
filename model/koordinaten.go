@@ -11,7 +11,7 @@ type Koordinate struct {
 
 func (k Koordinate) Add(o Koordinate) Koordinate {
 	k.X += o.X
-	k.Y *= o.Y
+	k.Y += o.Y
 	return k
 }
 
@@ -36,4 +36,9 @@ func (k Koordinate) Normalize() Koordinate {
 
 func (k Koordinate) Multiply(c float64) Koordinate {
 	return Koordinate{X: k.X * c, Y: k.Y * c}
+}
+
+// Normalisierter Richtungsvektor von der Koordinate in Richtung o
+func (k Koordinate) Richtung(o Koordinate) Koordinate {
+	return o.Add(k.Inverse()).Normalize()
 }
