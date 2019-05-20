@@ -2,6 +2,6 @@ package model
 
 type Staat struct {
 	ID       string
-	Kennwert int64
+	Kennwert float64
 	Position Koordinate
 }

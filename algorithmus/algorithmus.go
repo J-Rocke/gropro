@@ -1,23 +1,21 @@
 package algorithmus
 
 import (
-	"fmt"
 	"math"
 
 	"github.com/J-Rocke/gropro/model"
 )
 
-const d float64 = 0.4 // Dämpfung
+const d float64 = 0.6 // Dämpfung
+var n = 1000          // Anzahl Iterationen
 
 func Loese(ac *model.AusgangsdatenContainer) *model.LoesungsContainer {
 	loesung := model.LoesungsContainer{
 		Title:   ac.Title,
 		Staaten: initStaaten(ac.Staaten),
 	}
-
-	for i := 0; i < 3; i++ {
+	for i := 0; i < n; i++ {
 		loesung = Iteration(loesung, ac.Nachbarschaften)
-		fmt.Println(loesung)
 	}
 
 	return &loesung
@@ -44,7 +42,7 @@ func Iteration(l model.LoesungsContainer, nachbarn model.Nachbarschaften) model.
 func initStaaten(before []model.Staat) []model.Staat {
 	after := []model.Staat{}
 	for _, Staat := range before {
-		Staat.Kennwert = int64(float64(Staat.Kennwert) / math.Pi / math.Pi)
+		Staat.Kennwert = math.Sqrt(Staat.Kennwert) / math.Pi
 		after = append(after, Staat)
 	}
 
@@ -53,10 +51,10 @@ func initStaaten(before []model.Staat) []model.Staat {
 
 func wendeAn(staaten []model.Staat, kraefte map[string]model.Koordinate) []model.Staat {
 	for i, staat := range staaten {
-		staat.Position = staat.Position.Add(kraefte[staat.ID].Multiply(d))
+		new := staat.Position.Add(kraefte[staat.ID].Multiply(d))
+		staat.Position = new
 		staaten[i] = staat
 	}
-
 	return staaten
 }
 
@@ -69,7 +67,7 @@ func kraftAufVon(a, b model.Staat, nachbarn bool) model.Koordinate {
 			Multiply(0.5) // Hälftig auf jeden Staat
 	}
 	if abstand < 0 { // Falls keine Nachbarn sollen sie sich nicht Überschneiden
-		return b.Position.Richtung(a.Position).
+		return a.Position.Richtung(b.Position).
 			Multiply(abstand).
 			Multiply(1.2). // Push more than needed
 			Multiply(0.5)  // Hälftig auf jeden Staat
@@ -79,5 +77,5 @@ func kraftAufVon(a, b model.Staat, nachbarn bool) model.Koordinate {
 
 // Abstand zwischen zwei Kreisen
 func abstand(a, b model.Staat) float64 {
-	return a.Position.Abstand(b.Position) - float64(a.Kennwert) - float64(b.Kennwert)
+	return a.Position.Abstand(b.Position) - a.Kennwert - b.Kennwert
 }

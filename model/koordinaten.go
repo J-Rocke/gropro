@@ -35,7 +35,15 @@ func (k Koordinate) Normalize() Koordinate {
 }
 
 func (k Koordinate) Multiply(c float64) Koordinate {
-	return Koordinate{X: k.X * c, Y: k.Y * c}
+	x := k.X * c
+	y := k.Y * c
+	if math.IsNaN(x) {
+		x = 0
+	}
+	if math.IsNaN(y) {
+		y = 0
+	}
+	return Koordinate{x, y}
 }
 
 // Normalisierter Richtungsvektor von der Koordinate in Richtung o

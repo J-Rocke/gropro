@@ -1,10 +1,10 @@
 package eingabe
 
 import (
-	"strconv"
 	"bufio"
 	"io"
 	"os"
+	"strconv"
 	"strings"
 
 	"github.com/J-Rocke/gropro/model"
@@ -41,17 +41,17 @@ func Parse(r io.Reader) (*model.AusgangsdatenContainer, error) {
 		if err != nil {
 			return nil, err
 		}
-		laenge,err := strconv.ParseFloat(zellen[2], 64)
+		laenge, err := strconv.ParseFloat(zellen[2], 64)
 		if err != nil {
 			return nil, err
 		}
-		breite ,err := strconv.ParseFloat(zellen[3], 64)
+		breite, err := strconv.ParseFloat(zellen[3], 64)
 		if err != nil {
 			return nil, err
 		}
 		staat := model.Staat{
-			ID: zellen[0],
-			Kennwert: kennwert,
+			ID:       zellen[0],
+			Kennwert: float64(kennwert),
 			Position: model.Koordinate{
 				X: laenge,
 				Y: breite,
@@ -70,7 +70,7 @@ func Parse(r io.Reader) (*model.AusgangsdatenContainer, error) {
 		parseNachbarschaft(line, container.Nachbarschaften)
 	}
 
-	return  &container, nil
+	return &container, nil
 }
 
 func parseNachbarschaft(line string, n model.Nachbarschaften) {
