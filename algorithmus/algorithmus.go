@@ -6,22 +6,23 @@ import (
 	"github.com/J-Rocke/gropro/model"
 )
 
-const d float64 = 0.6 // Dämpfung
+const c float64 = 0.5 // Dämpfung
 var n = 1000          // Anzahl Iterationen
 
 func Loese(ac *model.AusgangsdatenContainer) *model.LoesungsContainer {
 	loesung := model.LoesungsContainer{
-		Title:   ac.Title,
+		Titel:   ac.Titel,
 		Staaten: initStaaten(ac.Staaten),
 	}
 	for i := 0; i < n; i++ {
-		loesung = Iteration(loesung, ac.Nachbarschaften)
+		loesung = iteration(loesung, ac.Nachbarschaften)
+		loesung.Iteration = i + 1
 	}
 
 	return &loesung
 }
 
-func Iteration(l model.LoesungsContainer, nachbarn model.Nachbarschaften) model.LoesungsContainer {
+func iteration(l model.LoesungsContainer, nachbarn model.Nachbarschaften) model.LoesungsContainer {
 	kraefte := map[string]model.Koordinate{}
 
 	for _, a := range l.Staaten {
@@ -33,7 +34,7 @@ func Iteration(l model.LoesungsContainer, nachbarn model.Nachbarschaften) model.
 		}
 	}
 	return model.LoesungsContainer{
-		Title:   l.Title,
+		Titel:   l.Titel,
 		Staaten: wendeAn(l.Staaten, kraefte),
 	}
 }
@@ -51,7 +52,7 @@ func initStaaten(before []model.Staat) []model.Staat {
 
 func wendeAn(staaten []model.Staat, kraefte map[string]model.Koordinate) []model.Staat {
 	for i, staat := range staaten {
-		new := staat.Position.Add(kraefte[staat.ID].Multiply(d))
+		new := staat.Position.Add(kraefte[staat.ID].Multiply(c))
 		staat.Position = new
 		staaten[i] = staat
 	}

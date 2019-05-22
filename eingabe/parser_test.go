@@ -10,11 +10,11 @@ import (
 )
 
 func Test_Parse_Bierkonsum(t *testing.T) {
-	c, err := ParseFromFile("../bierkonsum.txt")
+	c, err := ParseFromFile("../tests/bierkonsum.txt")
 	assert.NoError(t, err)
 	require.NotNil(t, c)
 	assert.Equal(t, model.AusgangsdatenContainer{
-		Title: "Bierkonsum",
+		Titel: "Bierkonsum",
 		Staaten: []model.Staat{
 			{
 				ID:       "D",
@@ -98,12 +98,12 @@ func Test_Parse_Bierkonsum(t *testing.T) {
 			},
 		},
 		Nachbarschaften: model.Nachbarschaften{
-			"D": map[string]bool{"A": true,"B": true,"CH": true,"CZ": true,"DK": true,"F": true,"L": true,"NL": true,"PL": true},
+			"D":  map[string]bool{"A": true, "B": true, "CH": true, "CZ": true, "DK": true, "F": true, "L": true, "NL": true, "PL": true},
 			"NL": map[string]bool{"B": true},
-			"B": map[string]bool{"L": true, "F": true},
-			"F": map[string]bool{"CH": true},
+			"B":  map[string]bool{"L": true, "F": true},
+			"F":  map[string]bool{"CH": true},
 			"CH": map[string]bool{"A": true},
-			"A": map[string]bool{"CZ": true},
+			"A":  map[string]bool{"CZ": true},
 			"CZ": map[string]bool{"PL": true},
 		},
 	}, *c)

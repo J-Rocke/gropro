@@ -1,5 +1,5 @@
 Bierkonsum
-# Staat Bierkonsum Längengrad Breitengrad
+# Staat Bierkonsum Laengengrad Breitengrad
 D   8692    10.0    51.3
 NL  1156     5.3    52.2
 B    781     4.8    50.7

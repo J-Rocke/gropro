@@ -1,12 +1,13 @@
 package model
 
 type AusgangsdatenContainer struct {
-	Title           string
+	Titel           string
 	Staaten         []Staat
 	Nachbarschaften Nachbarschaften
 }
 
 type LoesungsContainer struct {
-	Title string
-	Staaten []Staat
+	Titel     string
+	Staaten   []Staat
+	Iteration int
 }

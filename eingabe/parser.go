@@ -22,9 +22,9 @@ func Parse(r io.Reader) (*model.AusgangsdatenContainer, error) {
 	container := model.AusgangsdatenContainer{}
 	scanner := bufio.NewScanner(r)
 
-	// Erste Line ist der Title
+	// Erste Line ist der Titel
 	scanner.Scan()
-	container.Title = scanner.Text()
+	container.Titel = scanner.Text()
 
 	var line string
 	// Read all Staaten

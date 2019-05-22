@@ -16,13 +16,15 @@ func (k Koordinate) Add(o Koordinate) Koordinate {
 }
 
 func (k Koordinate) Inverse() Koordinate {
-	k.X = -k.X
-	k.Y = -k.Y
-	return k
+	return k.Multiply(-1)
 }
 
 func (k Koordinate) Length() float64 {
-	return math.Sqrt(k.X*k.X + k.Y*k.Y)
+	l := math.Sqrt(k.X*k.X + k.Y*k.Y)
+	if math.IsNaN(l) {
+		return 0
+	}
+	return l
 }
 
 func (k Koordinate) Abstand(o Koordinate) float64 {
@@ -31,7 +33,10 @@ func (k Koordinate) Abstand(o Koordinate) float64 {
 
 func (k Koordinate) Normalize() Koordinate {
 	l := k.Length()
-	return Koordinate{X: k.X / l, Y: k.Y / l}
+	if l == 0 {
+		return Koordinate{}
+	}
+	return k.Multiply(1. / l)
 }
 
 func (k Koordinate) Multiply(c float64) Koordinate {

@@ -17,8 +17,8 @@ func Test_InitStaaten(t *testing.T) {
 	after := initStaaten(before)
 
 	assert.Equal(t, []model.Staat{
-		{"DE", int64(math.Sqrt(float64(420)) / math.Pi), model.Koordinate{31, 32}},
-		{"NL", int64(math.Sqrt(float64(1230)) / math.Pi), model.Koordinate{11, 33}},
+		{"DE", math.Sqrt(420) / math.Pi, model.Koordinate{31, 32}},
+		{"NL", math.Sqrt(1230) / math.Pi, model.Koordinate{11, 33}},
 	}, after)
 }
 

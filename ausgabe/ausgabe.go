@@ -15,21 +15,22 @@ func GNUPlotToFile(filename string, loesung *model.LoesungsContainer) error {
 	}
 
 	min, max := findExtrema(loesung.Staaten)
-	file.WriteString("reset\n")
+	fmt.Fprintln(file, "reset")
 	fmt.Fprintf(file, "set xrange [%v:%v]\n", min.X, max.X)
 	fmt.Fprintf(file, "set yrange [%v:%v]\n", min.Y, max.Y)
-	file.WriteString("set size ratio 1.0\n")
-	file.WriteString("unset xtics\n")
-	file.WriteString("unset ytics\n")
-	file.WriteString("$data << EOD\n")
+	fmt.Fprintln(file, "set size ratio 1.0")
+	fmt.Fprintf(file, "set title \"%s, Iteration: %v\"\n", loesung.Titel, loesung.Iteration)
+	fmt.Fprintln(file, "unset xtics")
+	fmt.Fprintln(file, "unset ytics")
+	fmt.Fprintln(file, "$data << EOD")
 	for i, staat := range loesung.Staaten {
 		fmt.Fprintf(file, "%v %v %v %s %v\n", staat.Position.X, staat.Position.Y, staat.Kennwert, staat.ID, i)
 	}
-	file.WriteString("EOD\n")
-	file.WriteString("plot \\\n")
-	file.WriteString("'$data' using 1:2:3:5 with circles lc var notitle, \\\n")
-	file.WriteString("'$data' using 1:2:4:5 with labels font \"arial,9\" tc var notitle \n")
-	file.WriteString("pause -1")
+	fmt.Fprintln(file, "EOD")
+	fmt.Fprintln(file, "plot \\")
+	fmt.Fprintln(file, "'$data' using 1:2:3:5 with circles lc var notitle, \\")
+	fmt.Fprintln(file, "'$data' using 1:2:4:5 with labels font \"arial,9\" tc var notitle")
+	fmt.Fprintln(file, "pause -1")
 
 	return nil
 }
