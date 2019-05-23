@@ -6,35 +6,34 @@
 \BOOKMARK [1][-]{section.1.3}{Ausgabeformat}{chapter.1}% 6
 \BOOKMARK [2][-]{subsection.1.3.1}{Beschreibung}{section.1.3}% 7
 \BOOKMARK [2][-]{subsection.1.3.2}{Beispiel}{section.1.3}% 8
-\BOOKMARK [1][-]{section.1.4}{Speziallf\344lle}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.5}{Fehlerf\344lle}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.6}{Vereinfachungen}{chapter.1}% 11
-\BOOKMARK [0][-]{chapter.2}{Verfahrensbeschreibung}{}% 12
-\BOOKMARK [1][-]{section.2.1}{\334bersicht}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.2}{Einlesen}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Algorithmus}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.3.1}{Berechnung der Kr\344fte}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.2}{Anwendung der Kr\344fte}{section.2.3}% 17
-\BOOKMARK [1][-]{section.2.4}{Komplexit\344t}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.5}{Ausgabe}{chapter.2}% 19
-\BOOKMARK [0][-]{chapter.3}{Programmbeschreibung}{}% 20
-\BOOKMARK [1][-]{section.3.1}{Packages}{chapter.3}% 21
-\BOOKMARK [2][-]{subsection.3.1.1}{Model}{section.3.1}% 22
-\BOOKMARK [2][-]{subsection.3.1.2}{Eingabe}{section.3.1}% 23
-\BOOKMARK [2][-]{subsection.3.1.3}{Algorithmus}{section.3.1}% 24
-\BOOKMARK [2][-]{subsection.3.1.4}{Ausgabe}{section.3.1}% 25
-\BOOKMARK [0][-]{chapter.4}{Testdokumentation}{}% 26
-\BOOKMARK [0][-]{chapter.5}{Ausblick}{}% 27
-\BOOKMARK [1][-]{section.5.1}{Ausblick}{chapter.5}% 28
-\BOOKMARK [2][-]{subsection.5.1.1}{Abruchkriterium}{section.5.1}% 29
-\BOOKMARK [2][-]{subsection.5.1.2}{Voriteration}{section.5.1}% 30
-\BOOKMARK [2][-]{subsection.5.1.3}{Direkte Anbindung an gnuplot}{section.5.1}% 31
-\BOOKMARK [2][-]{subsection.5.1.4}{Andere Ausgabeprogramme}{section.5.1}% 32
-\BOOKMARK [2][-]{subsection.5.1.5}{REST Service}{section.5.1}% 33
-\BOOKMARK [0][-]{appendix.A}{Abweichungen und Erg\344nzungen zum Vorentwurf}{}% 34
-\BOOKMARK [0][-]{appendix.B}{Benutzeranleitung}{}% 35
-\BOOKMARK [0][-]{appendix.C}{Entwicklungsumgebung}{}% 36
-\BOOKMARK [0][-]{appendix.D}{Verwendete Hilfsmittel}{}% 37
-\BOOKMARK [1][-]{section.D.1}{Programme}{appendix.D}% 38
-\BOOKMARK [1][-]{section.D.2}{Quellen}{appendix.D}% 39
-\BOOKMARK [0][-]{appendix.E}{Erkl\344rung}{}% 40
+\BOOKMARK [1][-]{section.1.4}{Fehlerf\344lle}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.5}{Vereinfachungen}{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{Verfahrensbeschreibung}{}% 11
+\BOOKMARK [1][-]{section.2.1}{\334bersicht}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{Einlesen}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Algorithmus}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.3.1}{Berechnung der Kr\344fte}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.2}{Anwendung der Kr\344fte}{section.2.3}% 16
+\BOOKMARK [1][-]{section.2.4}{Komplexit\344t}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.5}{Ausgabe}{chapter.2}% 18
+\BOOKMARK [0][-]{chapter.3}{Programmbeschreibung}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Packages}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.1.1}{Model}{section.3.1}% 21
+\BOOKMARK [2][-]{subsection.3.1.2}{Eingabe}{section.3.1}% 22
+\BOOKMARK [2][-]{subsection.3.1.3}{Algorithmus}{section.3.1}% 23
+\BOOKMARK [2][-]{subsection.3.1.4}{Ausgabe}{section.3.1}% 24
+\BOOKMARK [0][-]{chapter.4}{Testdokumentation}{}% 25
+\BOOKMARK [0][-]{chapter.5}{Ausblick}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Ausblick}{chapter.5}% 27
+\BOOKMARK [2][-]{subsection.5.1.1}{Abruchkriterium}{section.5.1}% 28
+\BOOKMARK [2][-]{subsection.5.1.2}{Voriteration}{section.5.1}% 29
+\BOOKMARK [2][-]{subsection.5.1.3}{Direkte Anbindung an gnuplot}{section.5.1}% 30
+\BOOKMARK [2][-]{subsection.5.1.4}{Andere Ausgabeprogramme}{section.5.1}% 31
+\BOOKMARK [2][-]{subsection.5.1.5}{REST Service}{section.5.1}% 32
+\BOOKMARK [0][-]{appendix.A}{Abweichungen und Erg\344nzungen zum Vorentwurf}{}% 33
+\BOOKMARK [0][-]{appendix.B}{Benutzeranleitung}{}% 34
+\BOOKMARK [0][-]{appendix.C}{Entwicklungsumgebung}{}% 35
+\BOOKMARK [0][-]{appendix.D}{Verwendete Hilfsmittel}{}% 36
+\BOOKMARK [1][-]{section.D.1}{Programme}{appendix.D}% 37
+\BOOKMARK [1][-]{section.D.2}{Quellen}{appendix.D}% 38
+\BOOKMARK [0][-]{appendix.E}{Erkl\344rung}{}% 39

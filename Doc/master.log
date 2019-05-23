@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.5)  23 MAY 2019 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.5)  23 MAY 2019 12:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,7 +454,7 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 \openout4 = `master.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--3
+Underfull \hbox (badness 10000) in paragraph at lines 59--3
 
  []
 
@@ -504,49 +504,42 @@ l.47
       [2] (./ausgabeformat.gnu) (../tests/bierkonsum.gnu
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
- [3])
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
- [4]) [5]
+ [3])) [4]
 \openout2 = `2-Verfahrensbeschreibung.aux'.
 
  (./2-Verfahrensbeschreibung.tex
 chapter 2.
-[6
+[5
 
 
 
-]) [7]
+]) [6]
 \openout2 = `3-Programmbeschreibung.aux'.
 
  (./3-Programmbeschreibung.tex
 chapter 3.
-<packages.png, id=335, 1105.12875pt x 507.8975pt>
+<packages.png, id=325, 1105.12875pt x 507.8975pt>
 File: packages.png Graphic file (type png)
 <use packages.png>
 Package pdftex.def Info: packages.png  used on input line 13.
 (pdftex.def)             Requested size: 384.10959pt x 176.52681pt.
-<model.png, id=336, 650.43pt x 415.5525pt>
+<model.png, id=326, 650.43pt x 415.5525pt>
 File: model.png Graphic file (type png)
 <use model.png>
 Package pdftex.def Info: model.png  used on input line 23.
 (pdftex.def)             Requested size: 384.10959pt x 245.40846pt.
-[8
+[7
 
 
 
- <./packages.png (PNG copy)>] [9 <./model.png (PNG copy)>]
+ <./packages.png (PNG copy)>] [8 <./model.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-<Loese.png, id=364, 465.74pt x 510.90875pt>
+<Loese.png, id=354, 465.74pt x 510.90875pt>
 File: Loese.png Graphic file (type png)
 <use Loese.png>
 Package pdftex.def Info: Loese.png  used on input line 94.
@@ -555,45 +548,47 @@ Package pdftex.def Info: Loese.png  used on input line 94.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Iteration.png, id=366, 670.505pt x 1072.005pt>
+[11]
+<Iteration.png, id=361, 670.505pt x 1072.005pt>
 File: Iteration.png Graphic file (type png)
 <use Iteration.png>
-Package pdftex.def Info: Iteration.png  used on input line 109.
+Package pdftex.def Info: Iteration.png  used on input line 111.
 (pdftex.def)             Requested size: 234.73653pt x 375.28915pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[12] [13 <./Loese.png>] [14 <./Iteration.png>]
-<kraftVonAuf.png, id=386, 659.46375pt x 1015.795pt>
+ [12 <./Loese.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./Iteration.png>]
+<kraftVonAuf.png, id=376, 659.46375pt x 1015.795pt>
 File: kraftVonAuf.png Graphic file (type png)
 <use kraftVonAuf.png>
-Package pdftex.def Info: kraftVonAuf.png  used on input line 120.
+Package pdftex.def Info: kraftVonAuf.png  used on input line 122.
 (pdftex.def)             Requested size: 298.75262pt x 460.18799pt.
-<wendeAn.png, id=387, 663.47874pt x 492.84125pt>
+<wendeAn.png, id=377, 663.47874pt x 492.84125pt>
 File: wendeAn.png Graphic file (type png)
 <use wendeAn.png>
-Package pdftex.def Info: wendeAn.png  used on input line 132.
+Package pdftex.def Info: wendeAn.png  used on input line 134.
 (pdftex.def)             Requested size: 341.43436pt x 253.6243pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15
-
- <./KraftVonAuf.png>]
+ [14 <./KraftVonAuf.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <./wendeAn.png>]
-<findExtrema.png, id=403, 635.37375pt x 901.3675pt>
+ [15 <./wendeAn.png>]
+<findExtrema.png, id=393, 635.37375pt x 901.3675pt>
 File: findExtrema.png Graphic file (type png)
 <use findExtrema.png>
-Package pdftex.def Info: findExtrema.png  used on input line 155.
+Package pdftex.def Info: findExtrema.png  used on input line 157.
 (pdftex.def)             Requested size: 170.71393pt x 242.17589pt.
-) [17 <./findExtrema.png>]
+) [16 <./findExtrema.png>]
 \openout2 = `4-Testdokumentation.aux'.
 
  (./4-Testdokumentation.tex
 chapter 4.
-) [18
+) [17
 
 
 
@@ -605,11 +600,11 @@ chapter 5.
 )
 Underfull \vbox (badness 2253) has occurred while \output is active []
 
- [19
+ [18
 
 
 
-] [20]
+] [19]
 
 Class scrreprt Warning: You are using `\begin{appendix}...\end{appendix}'.
 (scrreprt)              You should note, that `\appendix' is a mostly globally
@@ -628,7 +623,7 @@ Class scrreprt Warning: You are using `\begin{appendix}...\end{appendix}'.
 
 (./A-AbweichungUndErgaenzung.tex
 chapter A.
-) [21
+) [20
 
 
 
@@ -637,7 +632,7 @@ chapter A.
 
  (./B-Benutzeranleitung.tex
 chapter B.
-) [22
+) [21
 
 
 
@@ -646,11 +641,8 @@ chapter B.
 
  (./C-Entwicklungsumgebung.tex
 chapter C.
-[23
+[22
 
-
-
-] [24
 
 
 ])
@@ -658,11 +650,19 @@ chapter C.
 
  (./D-VerwendeteHilfsmittel.tex
 chapter D.
-[25
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+ [23
 
 
 
-] [26
+
+
+] [24
 
 
 ])
@@ -715,45 +715,84 @@ Overfull \hbox (43.38354pt too wide) in paragraph at lines 2--19
 [] 
  []
 
-[27
+[25
 
 
 
-] [28
+] [26
 
 
 ])
 \openout2 = `F-Aufgabenstellung.aux'.
 
- (./F-Aufgabenstellung.tex [29
+ (./F-Aufgabenstellung.tex
+<./aufgabenstellung/1.jpg, id=450, 722.7pt x 963.6pt>
+File: ./aufgabenstellung/1.jpg Graphic file (type jpg)
+<use ./aufgabenstellung/1.jpg>
+Package pdftex.def Info: ./aufgabenstellung/1.jpg  used on input line 9.
+(pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
+<./aufgabenstellung/2.jpg, id=451, 722.7pt x 963.6pt>
+File: ./aufgabenstellung/2.jpg Graphic file (type jpg)
+<use ./aufgabenstellung/2.jpg>
+Package pdftex.def Info: ./aufgabenstellung/2.jpg  used on input line 14.
+(pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
+<./aufgabenstellung/3.jpg, id=452, 722.7pt x 963.6pt>
+File: ./aufgabenstellung/3.jpg Graphic file (type jpg)
+<use ./aufgabenstellung/3.jpg>
+Package pdftex.def Info: ./aufgabenstellung/3.jpg  used on input line 19.
+(pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
+<./aufgabenstellung/4.jpg, id=453, 722.7pt x 963.6pt>
+File: ./aufgabenstellung/4.jpg Graphic file (type jpg)
+<use ./aufgabenstellung/4.jpg>
+Package pdftex.def Info: ./aufgabenstellung/4.jpg  used on input line 24.
+(pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
+<./aufgabenstellung/5.jpg, id=454, 722.7pt x 963.6pt>
+File: ./aufgabenstellung/5.jpg Graphic file (type jpg)
+<use ./aufgabenstellung/5.jpg>
+Package pdftex.def Info: ./aufgabenstellung/5.jpg  used on input line 29.
+(pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
+<./aufgabenstellung/6.jpg, id=455, 722.7pt x 963.6pt>
+File: ./aufgabenstellung/6.jpg Graphic file (type jpg)
+<use ./aufgabenstellung/6.jpg>
+Package pdftex.def Info: ./aufgabenstellung/6.jpg  used on input line 34.
+(pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
+<./aufgabenstellung/7.jpg, id=456, 722.7pt x 963.6pt>
+File: ./aufgabenstellung/7.jpg Graphic file (type jpg)
+<use ./aufgabenstellung/7.jpg>
+Package pdftex.def Info: ./aufgabenstellung/7.jpg  used on input line 39.
+(pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
+<./aufgabenstellung/8.jpg, id=457, 722.7pt x 963.6pt>
+File: ./aufgabenstellung/8.jpg Graphic file (type jpg)
+<use ./aufgabenstellung/8.jpg>
+Package pdftex.def Info: ./aufgabenstellung/8.jpg  used on input line 44.
+(pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
+) [27
 
 
 
-] [30
-
-])
+] [28 <./aufgabenstellung/1.jpg>] [29 <./aufgabenstellung/2.jpg>] [30 <./aufgabenstellung/3.jpg>] [31 <./aufgabenstellung/4.jpg>] [32 <./aufgabenstellung/5.jpg>] [33 <./aufgabenstellung/6.jpg>] [34 <./aufgabenstellung/7.jpg>] [35 <./aufgabenstellung/8.jpg>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
  (./master.aux (./titel.aux) (./inhalt.aux) (./1-Aufgabenanalyse.aux) (./2-Verfahrensbeschreibung.aux) (./3-Programmbeschreibung.aux) (./4-Testdokumentation.aux) (./5-ZusammenfassungUndAusblick.aux) (./A-AbweichungUndErgaenzung.aux) (./B-Benutzeranleitung.aux) (./C-Entwicklungsumgebung.aux) (./D-VerwendeteHilfsmittel.aux) (./E-Erklaerung.aux) (./F-Aufgabenstellung.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: F504D91E58BE21970C865727C382A86B;2444.
+(rerunfilecheck)             Checksum: 2AEBBD7229E6B4A79D46C39CAE1178A1;2381.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 11183 strings out of 493884
- 174474 string characters out of 6155462
+ 11227 strings out of 493884
+ 175453 string characters out of 6155462
  467746 words of memory out of 5000000
- 14466 multiletter control sequences out of 15000+600000
+ 14497 multiletter control sequences out of 15000+600000
  19025 words of font info for 40 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  46i,12n,66p,9131b,1848s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on master.pdf (34 pages, 504739 bytes).
+Output written on master.pdf (39 pages, 1363373 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 497 compressed objects within 5 object streams
- 164 named destinations out of 1000 (max. 500000)
- 356 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 593 PDF objects out of 1000 (max. 8388607)
+ 509 compressed objects within 6 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 388 words of extra memory for PDF output out of 10000 (max. 10000000)
 

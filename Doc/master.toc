@@ -11,50 +11,49 @@
 \contentsline {section}{\numberline {1.3}Ausgabeformat}{3}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Beschreibung}{3}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Beispiel}{3}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Speziallf\IeC {\"a}lle}{4}{section.1.4}
-\contentsline {section}{\numberline {1.5}Fehlerf\IeC {\"a}lle}{4}{section.1.5}
-\contentsline {section}{\numberline {1.6}Vereinfachungen}{4}{section.1.6}
-\contentsline {chapter}{\numberline {2}Verfahrensbeschreibung}{6}{chapter.2}
-\contentsline {section}{\numberline {2.1}\IeC {\"U}bersicht}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}Einlesen}{6}{section.2.2}
-\contentsline {section}{\numberline {2.3}Algorithmus}{6}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Berechnung der Kr\IeC {\"a}fte}{6}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Anwendung der Kr\IeC {\"a}fte}{7}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Komplexit\IeC {\"a}t}{7}{section.2.4}
-\contentsline {section}{\numberline {2.5}Ausgabe}{7}{section.2.5}
-\contentsline {chapter}{\numberline {3}Programmbeschreibung}{8}{chapter.3}
-\contentsline {section}{\numberline {3.1}Packages}{8}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Model}{8}{subsection.3.1.1}
-\contentsline {subsubsection}{\nonumberline Koordinate}{8}{section*.6}
-\contentsline {subsubsection}{\nonumberline Staat}{9}{section*.7}
-\contentsline {subsubsection}{\nonumberline Nachbarschaften}{9}{section*.8}
-\contentsline {subsubsection}{\nonumberline AusgangsdatenContainer}{10}{section*.9}
-\contentsline {subsubsection}{\nonumberline LoesungsContainer}{10}{section*.10}
-\contentsline {subsection}{\numberline {3.1.2}Eingabe}{11}{subsection.3.1.2}
-\contentsline {subsubsection}{\nonumberline Parse}{11}{section*.11}
-\contentsline {subsubsection}{\nonumberline ParseFromFile}{11}{section*.12}
-\contentsline {subsection}{\numberline {3.1.3}Algorithmus}{12}{subsection.3.1.3}
-\contentsline {subsubsection}{\nonumberline Loese}{12}{section*.13}
+\contentsline {section}{\numberline {1.4}Fehlerf\IeC {\"a}lle}{4}{section.1.4}
+\contentsline {section}{\numberline {1.5}Vereinfachungen}{4}{section.1.5}
+\contentsline {chapter}{\numberline {2}Verfahrensbeschreibung}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}\IeC {\"U}bersicht}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Einlesen}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Algorithmus}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Berechnung der Kr\IeC {\"a}fte}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Anwendung der Kr\IeC {\"a}fte}{6}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Komplexit\IeC {\"a}t}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Ausgabe}{6}{section.2.5}
+\contentsline {chapter}{\numberline {3}Programmbeschreibung}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Packages}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Model}{7}{subsection.3.1.1}
+\contentsline {subsubsection}{\nonumberline Koordinate}{7}{section*.6}
+\contentsline {subsubsection}{\nonumberline Staat}{8}{section*.7}
+\contentsline {subsubsection}{\nonumberline Nachbarschaften}{8}{section*.8}
+\contentsline {subsubsection}{\nonumberline AusgangsdatenContainer}{9}{section*.9}
+\contentsline {subsubsection}{\nonumberline LoesungsContainer}{9}{section*.10}
+\contentsline {subsection}{\numberline {3.1.2}Eingabe}{10}{subsection.3.1.2}
+\contentsline {subsubsection}{\nonumberline Parse}{10}{section*.11}
+\contentsline {subsubsection}{\nonumberline ParseFromFile}{10}{section*.12}
+\contentsline {subsection}{\numberline {3.1.3}Algorithmus}{11}{subsection.3.1.3}
+\contentsline {subsubsection}{\nonumberline Loese}{11}{section*.13}
 \contentsline {subsubsection}{\nonumberline algorithmus}{12}{section*.14}
-\contentsline {subsubsection}{\nonumberline algorithmus.iteration()}{12}{section*.15}
-\contentsline {subsubsection}{\nonumberline algorithmus.kraftVonAuf()}{15}{section*.16}
-\contentsline {subsubsection}{\nonumberline algorithmus.wendeAn()}{16}{section*.17}
-\contentsline {subsection}{\numberline {3.1.4}Ausgabe}{17}{subsection.3.1.4}
-\contentsline {subsubsection}{\nonumberline GNUPlotToFile()}{17}{section*.18}
-\contentsline {subsubsection}{\nonumberline findExtrema()}{17}{section*.19}
-\contentsline {chapter}{\numberline {4}Testdokumentation}{18}{chapter.4}
-\contentsline {chapter}{\numberline {5}Ausblick}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ausblick}{19}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Abruchkriterium}{19}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Voriteration}{19}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Direkte Anbindung an gnuplot}{19}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Andere Ausgabeprogramme}{19}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}REST Service}{20}{subsection.5.1.5}
-\contentsline {chapter}{\numberline {A}Abweichungen und Erg\"anzungen zum Vorentwurf}{21}{appendix.A}
-\contentsline {chapter}{\numberline {B}Benutzeranleitung}{22}{appendix.B}
-\contentsline {chapter}{\numberline {C}Entwicklungsumgebung}{23}{appendix.C}
-\contentsline {chapter}{\numberline {D}Verwendete Hilfsmittel}{25}{appendix.D}
-\contentsline {section}{\numberline {D.1}Programme}{25}{section.D.1}
-\contentsline {section}{\numberline {D.2}Quellen}{25}{section.D.2}
-\contentsline {chapter}{\numberline {E}Erkl\IeC {\"a}rung}{27}{appendix.E}
+\contentsline {subsubsection}{\nonumberline algorithmus.iteration()}{13}{section*.15}
+\contentsline {subsubsection}{\nonumberline algorithmus.kraftVonAuf()}{14}{section*.16}
+\contentsline {subsubsection}{\nonumberline algorithmus.wendeAn()}{15}{section*.17}
+\contentsline {subsection}{\numberline {3.1.4}Ausgabe}{16}{subsection.3.1.4}
+\contentsline {subsubsection}{\nonumberline GNUPlotToFile()}{16}{section*.18}
+\contentsline {subsubsection}{\nonumberline findExtrema()}{16}{section*.19}
+\contentsline {chapter}{\numberline {4}Testdokumentation}{17}{chapter.4}
+\contentsline {chapter}{\numberline {5}Ausblick}{18}{chapter.5}
+\contentsline {section}{\numberline {5.1}Ausblick}{18}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Abruchkriterium}{18}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Voriteration}{18}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Direkte Anbindung an gnuplot}{18}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Andere Ausgabeprogramme}{18}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}REST Service}{19}{subsection.5.1.5}
+\contentsline {chapter}{\numberline {A}Abweichungen und Erg\"anzungen zum Vorentwurf}{20}{appendix.A}
+\contentsline {chapter}{\numberline {B}Benutzeranleitung}{21}{appendix.B}
+\contentsline {chapter}{\numberline {C}Entwicklungsumgebung}{22}{appendix.C}
+\contentsline {chapter}{\numberline {D}Verwendete Hilfsmittel}{23}{appendix.D}
+\contentsline {section}{\numberline {D.1}Programme}{23}{section.D.1}
+\contentsline {section}{\numberline {D.2}Quellen}{23}{section.D.2}
+\contentsline {chapter}{\numberline {E}Erkl\IeC {\"a}rung}{25}{appendix.E}
 \vspace *{.4cm}\textbf {F\ \ \ \ Aufgabenstellung}\\[.8cm]
