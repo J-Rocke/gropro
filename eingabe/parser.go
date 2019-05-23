@@ -10,6 +10,7 @@ import (
 	"github.com/J-Rocke/gropro/model"
 )
 
+// ParseFromFile liest Staaten und Nachbarschaften aus einer Datei
 func ParseFromFile(filename string) (*model.AusgangsdatenContainer, error) {
 	file, err := os.Open(filename)
 	if err != nil {
@@ -18,6 +19,7 @@ func ParseFromFile(filename string) (*model.AusgangsdatenContainer, error) {
 	return Parse(file)
 }
 
+// Parse liest Staaten und Nachbarschaften und schreibt sie in einen AusgangsdatenContainer
 func Parse(r io.Reader) (*model.AusgangsdatenContainer, error) {
 	container := model.AusgangsdatenContainer{}
 	scanner := bufio.NewScanner(r)

@@ -7,12 +7,12 @@ import (
 )
 
 // Dämpfung
-const c float64 = 0.5
+const C float64 = 0.5
 
 // Anzahl Iterationen
-const n = 1000
+const N = 1000
 
-// Loese Problemstellung
+// Loese Löst die Problemstellung mit einem iterativen Algorithmus
 func Loese(ac *model.AusgangsdatenContainer) *model.LoesungsContainer {
 	algo := algorithmus{
 		loesung: model.LoesungsContainer{
@@ -21,7 +21,7 @@ func Loese(ac *model.AusgangsdatenContainer) *model.LoesungsContainer {
 		nachbarschaften: ac.Nachbarschaften,
 	}
 	algo.initStaaten(ac.Staaten)
-	for i := 0; i < n; i++ {
+	for i := 0; i < N; i++ {
 		algo.iteration()
 	}
 
@@ -85,7 +85,7 @@ func (algo *algorithmus) kraftAufVon(a, b model.Staat) {
 func (algo *algorithmus) wendeAn() {
 	for i, staat := range algo.loesung.Staaten {
 		staat.Position = staat.Position.Add( // Wende Kraft an
-			algo.kraefte[staat.ID].Multiply(c), // mit Dämpfung
+			algo.kraefte[staat.ID].Multiply(C), // mit Dämpfung
 		)
 		algo.loesung.Staaten[i] = staat
 	}

@@ -8,6 +8,7 @@ import (
 	"github.com/J-Rocke/gropro/model"
 )
 
+// GNUPlotToFile schreibt die Loesung im Ausgabeformat für gnuplot in eine Datei
 func GNUPlotToFile(filename string, loesung *model.LoesungsContainer) error {
 	file, err := os.Create(filename)
 	if err != nil {
