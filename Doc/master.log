@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.5)  23 MAY 2019 12:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.12.5)  23 MAY 2019 13:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,7 +454,7 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 \openout4 = `master.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--3
+Underfull \hbox (badness 10000) in paragraph at lines 65--3
 
  []
 
@@ -518,15 +518,15 @@ chapter 2.
 
  (./3-Programmbeschreibung.tex
 chapter 3.
-<packages.png, id=325, 1105.12875pt x 507.8975pt>
+<packages.png, id=356, 1105.12875pt x 507.8975pt>
 File: packages.png Graphic file (type png)
 <use packages.png>
-Package pdftex.def Info: packages.png  used on input line 13.
+Package pdftex.def Info: packages.png  used on input line 17.
 (pdftex.def)             Requested size: 384.10959pt x 176.52681pt.
-<model.png, id=326, 650.43pt x 415.5525pt>
+<model.png, id=357, 650.43pt x 415.5525pt>
 File: model.png Graphic file (type png)
 <use model.png>
-Package pdftex.def Info: model.png  used on input line 23.
+Package pdftex.def Info: model.png  used on input line 27.
 (pdftex.def)             Requested size: 384.10959pt x 245.40846pt.
 [7
 
@@ -539,20 +539,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-<Loese.png, id=354, 465.74pt x 510.90875pt>
+<Loese.png, id=385, 465.74pt x 510.90875pt>
 File: Loese.png Graphic file (type png)
 <use Loese.png>
-Package pdftex.def Info: Loese.png  used on input line 94.
+Package pdftex.def Info: Loese.png  used on input line 98.
 (pdftex.def)             Requested size: 384.10959pt x 421.37239pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [11]
-<Iteration.png, id=361, 670.505pt x 1072.005pt>
+<Iteration.png, id=392, 670.505pt x 1072.005pt>
 File: Iteration.png Graphic file (type png)
 <use Iteration.png>
-Package pdftex.def Info: Iteration.png  used on input line 111.
+Package pdftex.def Info: Iteration.png  used on input line 115.
 (pdftex.def)             Requested size: 234.73653pt x 375.28915pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -561,15 +561,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13 <./Iteration.png>]
-<kraftVonAuf.png, id=376, 659.46375pt x 1015.795pt>
+<kraftVonAuf.png, id=407, 659.46375pt x 1015.795pt>
 File: kraftVonAuf.png Graphic file (type png)
 <use kraftVonAuf.png>
-Package pdftex.def Info: kraftVonAuf.png  used on input line 122.
+Package pdftex.def Info: kraftVonAuf.png  used on input line 126.
 (pdftex.def)             Requested size: 298.75262pt x 460.18799pt.
-<wendeAn.png, id=377, 663.47874pt x 492.84125pt>
+<wendeAn.png, id=408, 663.47874pt x 492.84125pt>
 File: wendeAn.png Graphic file (type png)
 <use wendeAn.png>
-Package pdftex.def Info: wendeAn.png  used on input line 134.
+Package pdftex.def Info: wendeAn.png  used on input line 138.
 (pdftex.def)             Requested size: 341.43436pt x 253.6243pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -578,10 +578,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <./wendeAn.png>]
-<findExtrema.png, id=393, 635.37375pt x 901.3675pt>
+<findExtrema.png, id=425, 635.37375pt x 901.3675pt>
 File: findExtrema.png Graphic file (type png)
 <use findExtrema.png>
-Package pdftex.def Info: findExtrema.png  used on input line 157.
+Package pdftex.def Info: findExtrema.png  used on input line 161.
 (pdftex.def)             Requested size: 170.71393pt x 242.17589pt.
 ) [16 <./findExtrema.png>]
 \openout2 = `4-Testdokumentation.aux'.
@@ -632,20 +632,20 @@ chapter A.
 
  (./B-Benutzeranleitung.tex
 chapter B.
-) [21
+[21
 
 
 
-]
+]) [22]
 \openout2 = `C-Entwicklungsumgebung.aux'.
 
  (./C-Entwicklungsumgebung.tex
 chapter C.
-[22
+) [23
 
 
 
-])
+]
 \openout2 = `D-VerwendeteHilfsmittel.aux'.
 
  (./D-VerwendeteHilfsmittel.tex
@@ -656,13 +656,8 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
- [23
+ [24
 
-
-
-
-
-] [24
 
 
 ])
@@ -719,6 +714,8 @@ Overfull \hbox (43.38354pt too wide) in paragraph at lines 2--19
 
 
 
+
+
 ] [26
 
 
@@ -726,42 +723,42 @@ Overfull \hbox (43.38354pt too wide) in paragraph at lines 2--19
 \openout2 = `F-Aufgabenstellung.aux'.
 
  (./F-Aufgabenstellung.tex
-<./aufgabenstellung/1.jpg, id=450, 722.7pt x 963.6pt>
+<./aufgabenstellung/1.jpg, id=493, 722.7pt x 963.6pt>
 File: ./aufgabenstellung/1.jpg Graphic file (type jpg)
 <use ./aufgabenstellung/1.jpg>
 Package pdftex.def Info: ./aufgabenstellung/1.jpg  used on input line 9.
 (pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
-<./aufgabenstellung/2.jpg, id=451, 722.7pt x 963.6pt>
+<./aufgabenstellung/2.jpg, id=494, 722.7pt x 963.6pt>
 File: ./aufgabenstellung/2.jpg Graphic file (type jpg)
 <use ./aufgabenstellung/2.jpg>
 Package pdftex.def Info: ./aufgabenstellung/2.jpg  used on input line 14.
 (pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
-<./aufgabenstellung/3.jpg, id=452, 722.7pt x 963.6pt>
+<./aufgabenstellung/3.jpg, id=495, 722.7pt x 963.6pt>
 File: ./aufgabenstellung/3.jpg Graphic file (type jpg)
 <use ./aufgabenstellung/3.jpg>
 Package pdftex.def Info: ./aufgabenstellung/3.jpg  used on input line 19.
 (pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
-<./aufgabenstellung/4.jpg, id=453, 722.7pt x 963.6pt>
+<./aufgabenstellung/4.jpg, id=496, 722.7pt x 963.6pt>
 File: ./aufgabenstellung/4.jpg Graphic file (type jpg)
 <use ./aufgabenstellung/4.jpg>
 Package pdftex.def Info: ./aufgabenstellung/4.jpg  used on input line 24.
 (pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
-<./aufgabenstellung/5.jpg, id=454, 722.7pt x 963.6pt>
+<./aufgabenstellung/5.jpg, id=497, 722.7pt x 963.6pt>
 File: ./aufgabenstellung/5.jpg Graphic file (type jpg)
 <use ./aufgabenstellung/5.jpg>
 Package pdftex.def Info: ./aufgabenstellung/5.jpg  used on input line 29.
 (pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
-<./aufgabenstellung/6.jpg, id=455, 722.7pt x 963.6pt>
+<./aufgabenstellung/6.jpg, id=498, 722.7pt x 963.6pt>
 File: ./aufgabenstellung/6.jpg Graphic file (type jpg)
 <use ./aufgabenstellung/6.jpg>
 Package pdftex.def Info: ./aufgabenstellung/6.jpg  used on input line 34.
 (pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
-<./aufgabenstellung/7.jpg, id=456, 722.7pt x 963.6pt>
+<./aufgabenstellung/7.jpg, id=499, 722.7pt x 963.6pt>
 File: ./aufgabenstellung/7.jpg Graphic file (type jpg)
 <use ./aufgabenstellung/7.jpg>
 Package pdftex.def Info: ./aufgabenstellung/7.jpg  used on input line 39.
 (pdftex.def)             Requested size: 341.43436pt x 455.2446pt.
-<./aufgabenstellung/8.jpg, id=457, 722.7pt x 963.6pt>
+<./aufgabenstellung/8.jpg, id=500, 722.7pt x 963.6pt>
 File: ./aufgabenstellung/8.jpg Graphic file (type jpg)
 <use ./aufgabenstellung/8.jpg>
 Package pdftex.def Info: ./aufgabenstellung/8.jpg  used on input line 44.
@@ -777,22 +774,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 2AEBBD7229E6B4A79D46C39CAE1178A1;2381.
+(rerunfilecheck)             Checksum: 50E052C85D7E0CF5FE78461C1C504BE6;2754.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 11227 strings out of 493884
- 175453 string characters out of 6155462
- 467746 words of memory out of 5000000
- 14497 multiletter control sequences out of 15000+600000
+ 11260 strings out of 493884
+ 175897 string characters out of 6155462
+ 467740 words of memory out of 5000000
+ 14512 multiletter control sequences out of 15000+600000
  19025 words of font info for 40 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  46i,12n,66p,9131b,1848s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb>
-Output written on master.pdf (39 pages, 1363373 bytes).
+Output written on master.pdf (39 pages, 1368187 bytes).
 PDF statistics:
- 593 PDF objects out of 1000 (max. 8388607)
- 509 compressed objects within 6 object streams
- 167 named destinations out of 1000 (max. 500000)
- 388 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 640 PDF objects out of 1000 (max. 8388607)
+ 556 compressed objects within 6 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 436 words of extra memory for PDF output out of 10000 (max. 10000000)
 

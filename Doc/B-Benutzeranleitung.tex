@@ -1,3 +1,44 @@
 \chapter{Benutzeranleitung}
 \label{Benutzeranleitung}
 
+\section{Vorraussetzungen}
+
+\subsection{Binary}
+Um das vorkompilierte Binary auszuführen ist ein 64bit Linux System notwendig.
+
+\subsection{Kompilation}
+Vorraussetzungen zur Kompilation des Programmes ist eine go in Version >= 1.11.
+Für die Ausführung der Unittests ebenfalls.
+Das Programm unterstütz go modules.
+
+Die Kompilation erfolget mit dem
+\begin{lstlisting}
+    build.sh
+\end{lstlisting}  Skript oder dem Befehl
+\begin{lstlisting}
+    go build .
+\end{lstlisting}
+
+\section{Ausführung}
+
+Die Ausführung geschieht durch das aufrufen der Binary, durch das
+\begin{lstlisting}
+    run.sh
+\end{lstlisting}  Skript oder dem Befehl
+\begin{lstlisting}
+    go run .
+\end{lstlisting}
+
+Alle Varianten erfordern als Parameter den Pfad zu einer Datei oder einen Ordner mit ".txt" Dateien.
+
+\section{Tests}
+
+Die Tests können mit dem
+\begin{lstlisting}
+    run:_tests.sh
+\end{lstlisting}  Skript oder dem Befehl
+\begin{lstlisting}
+    go test --cover ./...
+\end{lstlisting}
+
+ausgeführt werden.

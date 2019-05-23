@@ -22,23 +22,24 @@
 \contentsline {section}{\numberline {2.4}Komplexit\IeC {\"a}t}{6}{section.2.4}
 \contentsline {section}{\numberline {2.5}Ausgabe}{6}{section.2.5}
 \contentsline {chapter}{\numberline {3}Programmbeschreibung}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Packages}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Model}{7}{subsection.3.1.1}
-\contentsline {subsubsection}{\nonumberline Koordinate}{7}{section*.6}
+\contentsline {section}{\numberline {3.1}Entwicklerdokumentation}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Packages}{7}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Model}{7}{subsection.3.2.1}
+\contentsline {subsubsection}{\nonumberline Koordinate}{8}{section*.6}
 \contentsline {subsubsection}{\nonumberline Staat}{8}{section*.7}
 \contentsline {subsubsection}{\nonumberline Nachbarschaften}{8}{section*.8}
 \contentsline {subsubsection}{\nonumberline AusgangsdatenContainer}{9}{section*.9}
 \contentsline {subsubsection}{\nonumberline LoesungsContainer}{9}{section*.10}
-\contentsline {subsection}{\numberline {3.1.2}Eingabe}{10}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2.2}Eingabe}{10}{subsection.3.2.2}
 \contentsline {subsubsection}{\nonumberline Parse}{10}{section*.11}
 \contentsline {subsubsection}{\nonumberline ParseFromFile}{10}{section*.12}
-\contentsline {subsection}{\numberline {3.1.3}Algorithmus}{11}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.2.3}Algorithmus}{11}{subsection.3.2.3}
 \contentsline {subsubsection}{\nonumberline Loese}{11}{section*.13}
 \contentsline {subsubsection}{\nonumberline algorithmus}{12}{section*.14}
 \contentsline {subsubsection}{\nonumberline algorithmus.iteration()}{13}{section*.15}
 \contentsline {subsubsection}{\nonumberline algorithmus.kraftVonAuf()}{14}{section*.16}
 \contentsline {subsubsection}{\nonumberline algorithmus.wendeAn()}{15}{section*.17}
-\contentsline {subsection}{\numberline {3.1.4}Ausgabe}{16}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.2.4}Ausgabe}{16}{subsection.3.2.4}
 \contentsline {subsubsection}{\nonumberline GNUPlotToFile()}{16}{section*.18}
 \contentsline {subsubsection}{\nonumberline findExtrema()}{16}{section*.19}
 \contentsline {chapter}{\numberline {4}Testdokumentation}{17}{chapter.4}
@@ -51,9 +52,14 @@
 \contentsline {subsection}{\numberline {5.1.5}REST Service}{19}{subsection.5.1.5}
 \contentsline {chapter}{\numberline {A}Abweichungen und Erg\"anzungen zum Vorentwurf}{20}{appendix.A}
 \contentsline {chapter}{\numberline {B}Benutzeranleitung}{21}{appendix.B}
-\contentsline {chapter}{\numberline {C}Entwicklungsumgebung}{22}{appendix.C}
-\contentsline {chapter}{\numberline {D}Verwendete Hilfsmittel}{23}{appendix.D}
-\contentsline {section}{\numberline {D.1}Programme}{23}{section.D.1}
-\contentsline {section}{\numberline {D.2}Quellen}{23}{section.D.2}
+\contentsline {section}{\numberline {B.1}Vorraussetzungen}{21}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}Binary}{21}{subsection.B.1.1}
+\contentsline {subsection}{\numberline {B.1.2}Kompilation}{21}{subsection.B.1.2}
+\contentsline {section}{\numberline {B.2}Ausf\IeC {\"u}hrung}{21}{section.B.2}
+\contentsline {section}{\numberline {B.3}Tests}{22}{section.B.3}
+\contentsline {chapter}{\numberline {C}Entwicklungsumgebung}{23}{appendix.C}
+\contentsline {chapter}{\numberline {D}Verwendete Hilfsmittel}{24}{appendix.D}
+\contentsline {section}{\numberline {D.1}Programme}{24}{section.D.1}
+\contentsline {section}{\numberline {D.2}Quellen}{24}{section.D.2}
 \contentsline {chapter}{\numberline {E}Erkl\IeC {\"a}rung}{25}{appendix.E}
 \vspace *{.4cm}\textbf {F\ \ \ \ Aufgabenstellung}\\[.8cm]
