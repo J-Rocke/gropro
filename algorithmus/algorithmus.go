@@ -6,74 +6,89 @@ import (
 	"github.com/J-Rocke/gropro/model"
 )
 
-const c float64 = 0.5 // Dämpfung
-var n = 1000          // Anzahl Iterationen
+// Dämpfung
+const c float64 = 0.5
 
+// Anzahl Iterationen
+const n = 1000
+
+// Loese Problemstellung
 func Loese(ac *model.AusgangsdatenContainer) *model.LoesungsContainer {
-	loesung := model.LoesungsContainer{
-		Titel:   ac.Titel,
-		Staaten: initStaaten(ac.Staaten),
+	algo := algorithmus{
+		loesung: model.LoesungsContainer{
+			Titel: ac.Titel,
+		},
+		nachbarschaften: ac.Nachbarschaften,
 	}
+	algo.initStaaten(ac.Staaten)
 	for i := 0; i < n; i++ {
-		loesung = iteration(loesung, ac.Nachbarschaften)
-		loesung.Iteration = i + 1
+		algo.iteration()
 	}
 
-	return &loesung
+	return &algo.loesung
 }
 
-func iteration(l model.LoesungsContainer, nachbarn model.Nachbarschaften) model.LoesungsContainer {
-	kraefte := map[string]model.Koordinate{}
+type algorithmus struct {
+	loesung         model.LoesungsContainer
+	nachbarschaften model.Nachbarschaften
+	kraefte         map[string]model.Koordinate
+}
 
-	for _, a := range l.Staaten {
-		for _, b := range l.Staaten {
+// Initialisiere Staaten und berechne Radius
+func (algo *algorithmus) initStaaten(staaten []model.Staat) {
+	for _, Staat := range staaten {
+		Staat.Kennwert = math.Sqrt(Staat.Kennwert) / math.Pi
+		algo.loesung.Staaten = append(algo.loesung.Staaten, Staat)
+	}
+}
+
+func (algo *algorithmus) iteration() {
+	// initialisiere Kräfte für dies Iteration
+	algo.kraefte = map[string]model.Koordinate{}
+	// Iteriere über alle Staaten und Abstände
+	for _, a := range algo.loesung.Staaten {
+		for _, b := range algo.loesung.Staaten {
 			if a.ID == b.ID {
 				continue
 			}
-			kraefte[a.ID] = kraefte[a.ID].Add(kraftAufVon(a, b, nachbarn.SindNachbarn(a, b)))
+			// Berechne Kraft
+			algo.kraftAufVon(a, b)
 		}
 	}
-	return model.LoesungsContainer{
-		Titel:   l.Titel,
-		Staaten: wendeAn(l.Staaten, kraefte),
-	}
+	// Wende Kräfte an
+	algo.wendeAn()
+	algo.loesung.Iteration++
 }
 
-// Berechne Radius
-func initStaaten(before []model.Staat) []model.Staat {
-	after := []model.Staat{}
-	for _, Staat := range before {
-		Staat.Kennwert = math.Sqrt(Staat.Kennwert) / math.Pi
-		after = append(after, Staat)
-	}
-
-	return after
-}
-
-func wendeAn(staaten []model.Staat, kraefte map[string]model.Koordinate) []model.Staat {
-	for i, staat := range staaten {
-		new := staat.Position.Add(kraefte[staat.ID].Multiply(c))
-		staat.Position = new
-		staaten[i] = staat
-	}
-	return staaten
-}
-
-// Kraft auf Staat a von Staat b
-func kraftAufVon(a, b model.Staat, nachbarn bool) model.Koordinate {
+// Berechne Kraft auf Staat a von Staat b
+func (algo *algorithmus) kraftAufVon(a, b model.Staat) {
 	abstand := abstand(a, b)
-	if nachbarn { // Falls Nachbarn soll der Abstand eleminiert werden. Egal ob positiv oder negativ
-		return a.Position.Richtung(b.Position).
+	kraft := model.Koordinate{}
+	if algo.nachbarschaften.SindNachbarn(a, b) {
+		// Falls Nachbarn soll der Abstand eleminiert werden. Egal ob positiv oder negativ
+		kraft = a.Position.Richtung(b.Position).
+			Multiply(abstand)
+	} else if abstand < 0 {
+		// Falls keine Nachbarn sollen sie sich nicht Überschneiden
+		kraft = a.Position.Richtung(b.Position).
 			Multiply(abstand).
-			Multiply(0.5) // Hälftig auf jeden Staat
+			Multiply(1.2) // Lieber etwas weiter auseinander
+	} else {
+		// keine Überschneidung und keine Nachbarn => keine Kraft
 	}
-	if abstand < 0 { // Falls keine Nachbarn sollen sie sich nicht Überschneiden
-		return a.Position.Richtung(b.Position).
-			Multiply(abstand).
-			Multiply(1.2). // Push more than needed
-			Multiply(0.5)  // Hälftig auf jeden Staat
+	algo.kraefte[a.ID] = algo.kraefte[a.ID].Add(
+		kraft.Multiply(0.5), // Hälftig auf jeden Staat
+	)
+}
+
+// Wende berechnete Kräfte an
+func (algo *algorithmus) wendeAn() {
+	for i, staat := range algo.loesung.Staaten {
+		staat.Position = staat.Position.Add( // Wende Kraft an
+			algo.kraefte[staat.ID].Multiply(c), // mit Dämpfung
+		)
+		algo.loesung.Staaten[i] = staat
 	}
-	return model.Koordinate{} // keine Überschneidung und keine Nachbarn => keine Kraft
 }
 
 // Abstand zwischen zwei Kreisen

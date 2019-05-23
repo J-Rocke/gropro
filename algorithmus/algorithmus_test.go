@@ -9,23 +9,23 @@ import (
 )
 
 func Test_InitStaaten(t *testing.T) {
-	before := []model.Staat{
+	staaten := []model.Staat{
 		{"DE", 420, model.Koordinate{31, 32}},
 		{"NL", 1230, model.Koordinate{11, 33}},
 	}
 
-	after := initStaaten(before)
+	algo := algorithmus{}
+	algo.initStaaten(staaten)
 
 	assert.Equal(t, []model.Staat{
 		{"DE", math.Sqrt(420) / math.Pi, model.Koordinate{31, 32}},
 		{"NL", math.Sqrt(1230) / math.Pi, model.Koordinate{11, 33}},
-	}, after)
+	}, algo.loesung.Staaten)
 }
 
-// func divideByPi(i int64) int64 {
-// 	return int64(float64(i) / math.Pi)
-// }
-
-// func Test_DivideByPi(t *testing.T) {
-// 	assert.Equal(t, int64(float64(42)/math.Pi), divideByPi(42))
-// }
+func Test_Abstand(t *testing.T) {
+	assert.Equal(t, 5., abstand(
+		model.Staat{Position: model.Koordinate{45, 23}},
+		model.Staat{Position: model.Koordinate{41, 26}},
+	))
+}
