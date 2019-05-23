@@ -1,0 +1,44 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                   %
+% Auf dem Titelblatt sind aufzuführen:                              %
+%       Name und Vorname,                                           %
+%       Prüfungs-Nummer,                                            %
+%       verwendete Programmiersprache und                           %
+%       Datum                                                       %
+% Von sonstigen "Verschönerungen" ist Abstand zu nehmen.            %
+%                                                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+  
+  \rule{0.95\textwidth}{1pt}\\[.3cm]
+  \begin{minipage}{0.9\textwidth}
+    \renewcommand{\baselinestretch}{1.3}
+    \begin{center}
+      \LARGE \textbf{\ArbeitTitelseite}
+    \end{center}
+  \end{minipage}\\[.3cm]
+  \rule{0.95\textwidth}{1pt}\\
+
+  \vspace{7cm}
+
+  \today
+
+  \vspace{4cm}
+  
+  {\large \textbf{\Autor}}
+
+  \vspace{2.0cm}
+  
+  \begin{tabular}{rl}
+    Prüfungs-Nummer: & \Pruefungsnummer\\[.3cm]
+    Programmiersprache: & \Programmiersprache\\[.3cm]
+  \end{tabular}
+  
+  \vspace{1.9cm}
+  \clearpage
+  \thispagestyle{empty}
+\end{center}
+\end{titlepage}
+\cleardoublepage

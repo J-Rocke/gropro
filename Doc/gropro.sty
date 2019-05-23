@@ -1,0 +1,64 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{color,listings}
+\usepackage{listings-ext}
+\usepackage{luximono}
+
+\usepackage[breaklinks=false,linktocpage=false,linkcolor=black,citecolor=black,colorlinks=true]{
+hyperref }
+\usepackage[german]{fancyref}
+\usepackage{floatflt}
+\usepackage{expdlist}
+\usepackage{placeins}
+
+\newcommand{\ArbeitTitelseite}{Dokumentation der Praktischen Arbeit\\ zur Prüfung zum\\ Mathematisch-technischen Softwareentwickler}
+\newcommand{\ArbeitKopfzeile}{Dokumentation der Praktischen Arbeit 2019}
+\newcommand{\ArbeitThema}{}
+
+\newcommand{\Autor}{Jakob Rockenbauch}
+\newcommand{\Pruefungsnummer}{30 6511 142 18688}
+
+\newcommand{\Programmiersprache}{golang}
+\newcommand{\Compiler}{go1.12.4 linux/amd64}
+\newcommand{\Rechner}{amd64}
+\newcommand{\Betriebssystem}{Ubuntu 18.04}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\pagestyle{fancyplain}
+
+\lhead[\fancyplain{}{\bfseries \small{\thepage}}]%
+      {\fancyplain{}{\bfseries \small{\leftmark}}}
+\rhead[\fancyplain{}{\bfseries \small{\ArbeitKopfzeile}}]%
+      {\fancyplain{}{\bfseries \small{\thepage}}}
+\lfoot[\fancyplain{}{}]%
+      {\fancyplain{}{\bfseries \small{\Autor}}}
+\rfoot[\fancyplain{}{\bfseries \small{\ArbeitThema}}]%
+      {\fancyplain{}{}}
+\cfoot{}
+
+\setlength{\textwidth}{15cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\oddsidemargin}{0.5cm}
+
+\newcommand{\Ginclude}[1]{\include{#1}\cleardoublepage}
+
+%PROGRAMMIERSPRACHE GGF ÄNDERN!
+% \lstset{language=[Sharp]C,
+% morekeywords={partial},
+% literate={ö}{{\"o}}1
+%          {ä}{{\"a}}1
+%          {ü}{{\"u}}1
+%          {ß}{{\ss}}1}
+\lstdefinestyle{output}{%
+    language=bash,
+    xleftmargin=\parindent
+}

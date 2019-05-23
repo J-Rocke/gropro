@@ -1,0 +1,101 @@
+\chapter{Aufgabenanalyse}
+\label{chap:Aufgabenanalyse}
+
+\section{Analyse}
+In der Aufgabe geht es darum schemenhafte Karten auf Basis von vorgegebenen Kennwerten zu erstellen.
+Dabei werden Staaten als Kreise dargestellt und die Fläche der Kreise ist proportional zum Kennwert.
+Die Schwierigkeit liegt hierbei eine möglichst überschneidungsfreie Darstellung zu finden
+und gleichzeitig die urspünglichen Lage- und Nachbarschaftsbeziehungen möglichst beizubehalten.
+
+\section{Eingabeformat}
+
+Das Programm erwartet den Pfad zu einer Datei oder Verzeichniss enthält als Kommandozeilenparameter.
+Falls der übergebene Pfad ein Verzeichniss ist werden alle Dateien in diesem Verzeichniss die mit .txt enden als Eingaben verwendet und hintereinander abgearbeitet.
+Falls nur eine Datei übergeben wird muss sie mit .txt enden.
+
+Die Eingabedateien werden nach folgenden Formatsvorgaben eingelesen. Bei Abweichungen von der Vorgabe ist das Verhalten undefiniert oder eine Fehlermeldung wird ausgegeben.
+
+\subsection{Formatsforgaben}
+
+\subsubsection{Kommentare}
+Alle Zeilen die mit einem oder mehreren \# Zeichen beginnen werden als Kommentare ignoriert.
+
+\subsubsection{Titel}
+Die erste Zeile wird als Titel des Kennwertes gepeichert.
+
+\subsubsection{Staaten}
+
+Die darauf folgenden Zeilen beschreiben die Staaten die in der Karte dargestellt werden.
+Sie müssen aus einer ID, einem Kennwert, einem Längengrad und einem Breitengrad bestehen. Die einzelnen Werte müssen durch eine beliebige Anzahl von Whitespace getrennt sein.
+Die ID muss ein string sein, der Kennwert eine ganze positive Zahl und Längengrad und Breitengrad eine Fließkommazahl.
+Es werden so lange Staaten eingelesen bis eine Zeile ein : Symbol enthält.
+
+\subsubsection{Nachbarschaften}
+
+Alle weiteren Zeilen müssen mit der ID eines Staates gefolgt von einem Doppelpunkt(:), gefolgt von einer Liste von IDs bestehen.
+Diese Zeilen bilden die Nachbarschaftsbeziehungen der Staaten ab.
+Nachbarschaften sind symetrisch das heißt wenn z.B. NL ein Nachbar von D ist auch D ein Nachbar von NL.
+Es reicht jedoch wenn in der Eingabe die Nachbarschaft nur in eine richtung enthalten ist. Die Rückrichtung gilt dann automatisch auch.
+
+\subsection{Beispiel}
+
+\lstinputlisting{../tests/bierkonsum.txt}
+
+\section{Ausgabeformat}
+Die Ausgabe erfolgt in eine Datei oder meherere Dateien. Die Ausgabe ist speziell auf das Programm gnuplot ab Version 5 zugeschnitten.
+Diese Dateien haben den gleichen Namen wie die Eingabedateien doch eine .gnu Endung anstatt der .txt Endung.
+
+\subsection{Beschreibung}
+Das Format der Ausgabedateien ist wie folgt:
+
+\lstinputlisting{./ausgabeformat.gnu}
+
+Dabei werden die <Tags> wie folgt ersetzt.
+
+
+
+\begin{center}
+    \begin{tabular}{ c c }
+        Tag & Inhalt  \\
+        \hline
+        <xmin> & Kleinster X-Wert im Darstellungsbereich  \\
+        <xmax> & Größter X-Wert im Darstellungsbereich  \\
+        <ymin> & Kleinster Y-Wert im Darstellungsbereich  \\
+        <ymax> & Größter Y-Wert im Darstellungsbereich  \\
+        <titel> & Der eingelesene Titel  \\
+        <nr> & Anzahl der Iterationen  \\
+        <Liste aus ....> & Liste aus Staaten, je Zeile ein Staat. \\
+        <xpos> & X-Koordinate des Kreismittelpunktes  \\
+        <ypos> & Y-Koordinate des Kreismittelpunktes \\
+        <ID> & ID des Staates  \\
+        <numericID> & Forlaufende numerische ID (dient zur Färbung)  \\
+    \end{tabular}
+    \end{center}
+
+\subsection{Beispiel}
+
+\lstinputlisting{../tests/bierkonsum.gnu}
+
+\section{Speziallfälle}
+
+Folgende Spezialfälle wurden identifizeirt und sind getestet.
+
+\begin{itemize}
+    \item Nur ein Staat
+    \item TODO
+\end{itemize}
+
+\section{Fehlerfälle}
+
+Im Falle eines Fehler durch falsche Eingaben wird eine Fehlermeldung ausgegeben und die Lösungsfindung für die entsprechende Eingabe abgebrochen.
+
+\section{Vereinfachungen}
+
+Gegenüber der Realität unserer Erde wurden hierbei eine Reihe von vereinfachten Ahnnahmen getroffen.
+\begin{enumerate}
+    \item Die Karte ist unendlich groß.
+    \item Die Karte ist flach und nicht gewölbt.
+    \item Der Abstand zwischen zwei Längengraden ist immer gleich groß.
+    \item Der Abstand benachbarter Längengrade ist gleich dem Abstand benachbarter Breitengrade
+    \item Daraus folgend sind Abstände nicht auf einer Kugel berechnet.
+\end{enumerate}

@@ -1,0 +1,68 @@
+\chapter{Verfahrensbeschreibung}
+\label{chap:Verfahrensbeschreibung}
+
+\section{Übersicht}
+
+Zuerst werden die Staaten und Nachbarschaftsbeziehungen aus der Eingabedatei eingelesen.
+Danach wird mithilfe eines iterativen Algorithmus mit einer festen Anzahl von Iterationen eine Lösung gesucht.
+Diese wird dann in eine für gnuplot aufbereitete Form in eine Ausgabedatei geschrieben.
+
+\section{Einlesen}
+
+Das Einlesen geschieht mit einem speziell auf das Eingabeformat abgestimmten Parser der die Eingabedatei nur genau einmal durchläuft.
+Der Parser ist so geschrieben das er die Eingabe nicht nur aus Dateien lesen kann sondern ist über das io.Reader interface aus der golang Standardbibliothek erweiterbar.
+
+\section{Algorithmus}
+
+Der Algorithmus besteht aus einer festen Anzahl von Iterationen. In jeder Iterationen werden die Mittelpunkte der Staaten verschoben.
+Diese Verschiebungen geschehen in Abhängigkeit von den aktuellen Überschneidungen sowie den Abständen von Nachbarstaaten.
+Dafür werden zuerst für jeden Staat Abstoßungskräfte durch Überschneidungen und Anziehungskräfte durch Nachbarn berechnet,
+dann diese pro Staat addiert und schlussendlich alle Staaten proportional zur berechneten Kraft verschoben.
+Diese Verschiebung ist gedämpft um die echten Lagebeziehungen möglichst beizubehalten und um Schwingungseffekte zu verringern.
+
+\subsection{Berechnung der Kräfte}
+
+Zur Berechnung der Kräfte wird über jeden Staat(a) iteriert und der Abstand zu jedem anderen Staat(b) berechnet,
+hierbei ist der kürzeste Abstand von Kreisaußenkante zu Kreisaußenkante gemeint und nicht der Abstand der Mittelpunkte.
+Falls die Kreise sich überschneiden ist der Abstand negativ.
+Abhängig davon ob die Länder benachbart sind wird dann eine Kraft auf den Staat berechnet.
+Die Stärke der Kraft(f) abhängig vom Abstand(d) berechnet sich bei Nachbarstaaten wie folgt:
+\begin{center}
+    $$ f(d) = d $$
+\end{center}
+Dies sorgt dafür das Nachbarn sich berühreren.
+Bei nicht Nachbarschaftsbeziehungen:
+\begin{center}
+    $
+    f(d) = \left\{
+        \begin{array}{ll}
+            1,2 \cdot d & \textrm{falls }d < 0 \\
+            0 & \textrm{sonst} \\
+        \end{array} \right.
+    $
+\end{center}
+Dies sorgt dafür das nicht benachbarte Länder sich nicht überschneiden.
+Die Richtung der Kraft ist hierbei immer vom Mittelpunkt des Staates a in Richtung des Mittelpunktes Staat b.
+Bei einer negativen Stärke wirkt die Kraft in die umgekehrte Richtung.
+Da die Kraft von b auf a auch gleichzeitig eine gleichstarke Kraft von a auf b bewirkt,
+werden alle Kräfte halbiert damit die Abstände durch sie nicht doppelt kompensiert werden.
+
+\subsection{Anwendung der Kräfte}
+
+Nachdem alle Kräfte berechnet wurden wird über alle Staaten iteriert und auf jeden die berechnete Kraft(f) angewendet.
+Dies geschieht durch eine Verschiebung(v):
+
+\begin{center}
+    $ v = c \cdot f , c \epsilon (0,1) $
+\end{center}
+
+Wobei c ein Dämpfungsfaktor zwischen 0 und 1 ist.
+Die Dämpfung sorgt dafür das die Lagebeziehungen nicht sicht nicht zu stark ändern und soll Schwingungseffekte verhindern.
+
+\section{Komplexität}
+
+Dadurch das für jeden Staat der Abstand zu jedem anderen Staat berechnet werden muss, liegt die Komplexität des Algorithmus bei $O(n)^2$ wobei n die Anzahl der Staaten ist.
+
+\section{Ausgabe}
+
+Die Ausgabe ist getrennt von dem Algorithmus und bereitet die Ergebnisse für gnuplot auf.
